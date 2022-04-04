@@ -1,6 +1,8 @@
 {
-  "name": "blocks-js",
+  "name": "@dirtyhenry/blocks",
   "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/dirtyhenry/blocks-js.git",
   "author": "Mick F <mick@mickf.net>",
   "license": "MIT",
