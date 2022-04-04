@@ -1,0 +1,23 @@
+{
+  "name": "blocks-js",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/dirtyhenry/blocks-js.git",
+  "author": "Mick F <mick@mickf.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "7.17.6",
+    "@babel/core": "7.17.8",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-typescript": "7.16.7",
+    "@types/node": "17.0.23",
+    "typescript": "4.6.3"
+  },
+  "files": [
+    "tsc-out"
+  ],
+  "scripts": {
+    "typecheck": "tsc",
+    "transpile": "babel src --out-dir babel-out --extensions \".ts\""
+  }
+}
