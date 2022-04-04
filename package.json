@@ -14,10 +14,10 @@
     "typescript": "4.6.3"
   },
   "files": [
-    "tsc-out"
+    "dist"
   ],
   "scripts": {
     "typecheck": "tsc",
-    "transpile": "babel src --out-dir babel-out --extensions \".ts\""
+    "transpile": "babel src --out-dir dist --extensions \".ts\""
   }
 }

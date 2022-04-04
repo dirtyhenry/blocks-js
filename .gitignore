@@ -1,6 +1,2 @@
 # Dependency directories
 node_modules/
-
-# Generated directories
-babel-out/
-tsc-out/
