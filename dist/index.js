@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.curl = void 0;
+exports.fetch = void 0;
 
 var _assert = _interopRequireDefault(require("assert"));
 
@@ -11,7 +11,16 @@ var _https = require("https");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var curl = function curl(url) {
+/**
+ * Fetches the given URL as a simple `GET` request. 
+ * 
+ * Node should bring native support of the Fetch API so this method is scheduled to become 
+ * obsolete pretty soon.
+ * 
+ * @param url The URL to fetch.
+ * @returns The response to the request (ie headers, status code and body).
+ */
+var fetch = function fetch(url) {
   return new Promise(function (resolve, reject) {
     (0, _https.get)(url, function (res) {
       var headers = res.headers,
@@ -35,4 +44,4 @@ var curl = function curl(url) {
   });
 };
 
-exports.curl = curl;
+exports.fetch = fetch;
