@@ -12,7 +12,8 @@ declare type FetchResponse = {
  * obsolete pretty soon.
  *
  * @param url The URL to fetch.
+ * @param userAgent The content of the `User-Agent` header sent with the request.
  * @returns The response to the request (ie headers, status code and body).
  */
-declare const fetch: (url: string | URL) => Promise<FetchResponse>;
+declare const fetch: (url: string | URL, userAgent: string) => Promise<FetchResponse>;
 export { fetch };

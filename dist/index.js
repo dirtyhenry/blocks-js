@@ -12,17 +12,22 @@ var _https = require("https");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 /**
- * Fetches the given URL as a simple `GET` request. 
- * 
- * Node should bring native support of the Fetch API so this method is scheduled to become 
+ * Fetches the given URL as a simple `GET` request.
+ *
+ * Node should bring native support of the Fetch API so this method is scheduled to become
  * obsolete pretty soon.
- * 
+ *
  * @param url The URL to fetch.
+ * @param userAgent The content of the `User-Agent` header sent with the request.
  * @returns The response to the request (ie headers, status code and body).
  */
-var fetch = function fetch(url) {
+var fetch = function fetch(url, userAgent) {
   return new Promise(function (resolve, reject) {
-    (0, _https.get)(url, function (res) {
+    (0, _https.get)(url, {
+      headers: {
+        "User-Agent": userAgent
+      }
+    }, function (res) {
       var headers = res.headers,
           statusCode = res.statusCode;
       (0, _assert["default"])(!!statusCode);
