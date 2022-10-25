@@ -14,7 +14,7 @@ module.exports = {
       resolve: {
         alias: [
           {
-            find: "@statium/core",
+            find: "@dirtyhenry/statium-core",
             replacement: path.resolve(
               __dirname,
               "../../../packages/statium-core/"
