@@ -1,0 +1,26 @@
+import { UpcomingGame } from "@statium/core/src";
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+
+<Meta title="Components/Statium/UpcomingGame" component={UpcomingGame} />
+
+# Upcoming Game
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc euismod.
+
+## Props
+
+<ArgsTable of={UpcomingGame} />
+
+## Examples
+
+<Canvas>
+  <Story name="Default">
+    <UpcomingGame
+      date={new Date()}
+      localizedHomeTeam="Team A"
+      localizedAwayTeam="Team B"
+      calendarUrl={new URL("https://www.foo.bar/path")}
+      tvChannels={["tv1"]}
+    />
+  </Story>
+</Canvas>

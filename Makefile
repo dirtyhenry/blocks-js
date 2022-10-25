@@ -1,13 +1,6 @@
 install:
 	yarn install
 
-typecheck:
-	yarn typecheck
-
-transpile:
-	yarn transpile
-
 build:
-	yarn typecheck
-	yarn transpile
+	yarn build
 	@echo "🧱 are ready."
