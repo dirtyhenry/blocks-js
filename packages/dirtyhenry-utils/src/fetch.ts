@@ -11,14 +11,14 @@ type FetchResponse = {
 /**
  * Fetches the given URL as a simple `GET` request.
  *
- * Node should bring native support of the Fetch API so this method is scheduled to become
+ * Node should bring native support of the Fetch API (v17.5) so this method is scheduled to become
  * obsolete pretty soon.
  *
  * @param url The URL to fetch.
  * @param userAgent The content of the `User-Agent` header sent with the request.
  * @returns The response to the request (ie headers, status code and body).
  */
-const fetch = (
+export const fetch = (
   url: string | URL,
   userAgent: string
 ): Promise<FetchResponse> => {
@@ -47,5 +47,3 @@ const fetch = (
     });
   });
 };
-
-export { fetch };
