@@ -1,6 +1,6 @@
 {
   "name": "@dirtyhenry/utils",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -16,11 +16,11 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
+    "@dirtyhenry/eslint-config": "*",
     "@dirtyhenry/tsconfig": "*",
-    "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.4",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
     "eslint": "^8.15.0",
-    "eslint-config-acme": "*",
     "react": "^18.1.0",
     "tsup": "^6.3.0",
     "typescript": "^4.5.3"

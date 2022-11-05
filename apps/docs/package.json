@@ -14,17 +14,17 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@dirtyhenry/tsconfig": "*",
     "@dirtyhenry/eslint-config": "*",
+    "@dirtyhenry/tsconfig": "*",
     "@storybook/addon-actions": "^6.4.18",
     "@storybook/addon-docs": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.18",
     "@storybook/addon-links": "^6.4.18",
-    "@storybook/builder-vite": "^0.2.4",
+    "@storybook/builder-vite": "^0.2.5",
     "@storybook/react": "^6.4.18",
-    "@vitejs/plugin-react": "^2.1.0",
+    "@vitejs/plugin-react": "^2.2.0",
     "serve": "^14.0.1",
     "typescript": "^4.5.4",
-    "vite": "^3.1.8"
+    "vite": "^3.2.1"
   }
 }
