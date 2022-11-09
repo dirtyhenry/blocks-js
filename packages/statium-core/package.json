@@ -16,7 +16,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
-    "@dirtyhenry/eslint-config": "*",
+    "eslint-config-dirtyhenry": "*",
     "@dirtyhenry/tsconfig": "*",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",

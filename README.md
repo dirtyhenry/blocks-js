@@ -39,7 +39,7 @@ This Turborepo includes the following packages and applications:
 - `packages/@dirtyhenry/utils`: Shared React utilities
 - `packages/@dirtyhenry/tsconfig`: Shared `tsconfig.json`s used throughout the Turborepo
 - `packages/@statium/core`: Core React components for Statium
-- `packages/eslint-config-acme`: ESLint preset
+- `packages/eslint-config-dirtyhenry`: ESLint preset
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/). Yarn Workspaces enables us to "hoist" dependencies that are shared between packages to the root `package.json`. This means smaller `node_modules` folders and a better local dev experience. To install a dependency for the entire monorepo, use the `-W` workspaces flag with `yarn add`.
 
@@ -112,13 +112,13 @@ Storybook provides us with an interactive UI playground for our components. This
 
 - Use Vite to bundle stories instantly (in milliseconds)
 - Automatically find any stories inside the `stories/` folder
-- Support using module path aliases like `@statium-core` for imports
+- Support using module path aliases like `@dirtyhenry/statium-core` for imports
 - Write MDX for component documentation pages
 
 For example, here's the included Story for our `Button` component:
 
 ```js:apps/docs/stories/button.stories.mdx
-import { Button } from '@acme-core/src';
+import { Button } from '@dirtyhenry/statium-core/src';
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 
 <Meta title="Components/Button" component={Button} />
