@@ -14,7 +14,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@dirtyhenry/eslint-config": "*",
+    "eslint-config-dirtyhenry": "*",
     "@dirtyhenry/tsconfig": "*",
     "@storybook/addon-actions": "^6.4.18",
     "@storybook/addon-docs": "^6.4.22",

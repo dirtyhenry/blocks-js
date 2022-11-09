@@ -1,5 +1,5 @@
 {
-  "name": "@dirtyhenry/eslint-config",
+  "name": "eslint-config-dirtyhenry",
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
