@@ -1,5 +1,11 @@
 # @dirtyhenry/utils
 
+## 0.2.2
+
+### Patch Changes
+
+- 4506c64: Fix eslint config
+
 ## 0.2.1
 
 ### Patch Changes
