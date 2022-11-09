@@ -17,7 +17,7 @@ module.exports = {
             find: "@dirtyhenry/statium-core",
             replacement: path.resolve(
               __dirname,
-              "../../../packages/statium-core/"
+              "../../../packages/dirtyhenry-statium-core/"
             ),
           },
         ],
