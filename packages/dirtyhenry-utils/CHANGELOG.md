@@ -1,5 +1,11 @@
 # @dirtyhenry/utils
 
+## 0.2.1
+
+### Patch Changes
+
+- 2ccc76f: Fix empty package
+
 ## 0.2.0
 
 ### Minor Changes
