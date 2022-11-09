@@ -15,10 +15,10 @@
     "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "2.25.0",
+    "@changesets/cli": "2.25.2",
     "@dirtyhenry/eslint-config": "*",
-    "eslint": "8.26.0",
+    "eslint": "8.27.0",
     "prettier": "2.7.1",
-    "turbo": "1.6.2"
+    "turbo": "1.6.3"
   }
 }
