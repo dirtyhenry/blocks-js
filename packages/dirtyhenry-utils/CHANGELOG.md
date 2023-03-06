@@ -1,5 +1,11 @@
 # @dirtyhenry/utils
 
+## 0.3.0
+
+### Minor Changes
+
+- fa7443a: New functions from Statium
+
 ## 0.2.3
 
 ### Patch Changes
