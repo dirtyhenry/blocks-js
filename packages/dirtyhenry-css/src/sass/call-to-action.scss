@@ -1,0 +1,79 @@
+$dirtyhenry-c2a-button-line-height: 1.4em;
+$dirtyhenry-c2a-button-vertical-padding: 0.5em;
+$dirtyhenry-c2a-button-horizontal-padding: 1em;
+$dirtyhenry-c2a-height: 3.143em;
+$dirtyhenry-c2a-button-radius: $dirtyhenry-c2a-height / 2;
+
+.dirtyhenry-c2a-button {
+  display: inline-block;
+  padding: $dirtyhenry-c2a-button-vertical-padding 1em;
+  margin: 1em;
+  height: 3.143em;
+  line-height: 1em;
+
+  background-color: transparent;
+  color: white;
+
+  text-transform: uppercase;
+
+  border: 2px solid white;
+  border-radius: $dirtyhenry-c2a-button-radius;
+
+  text-align: center;
+  white-space: nowrap;
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  span + span {
+    margin-left: 0.5em;
+  }
+
+  img {
+    max-height: 100%;
+  }
+
+  &::before {
+    /* The ghost, nudged to maintain perfect centering */
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
+
+  &:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+  &:hover {
+    background-color: $dirtyhenry-accent-color-1;
+    text-decoration: none;
+    color: white;
+  }
+
+  &:active {
+    box-shadow: inset 0 10px 25px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: white;
+  }
+
+  .dirtyhenry-c2a-stonger {
+    background-color: $dirtyhenry-color;
+    color: white;
+    font-weight: bold;
+    padding: $dirtyhenry-c2a-button-vertical-padding 2.33em;
+
+    &:hover {
+      background-color: $dirtyhenry-accent-color-1;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

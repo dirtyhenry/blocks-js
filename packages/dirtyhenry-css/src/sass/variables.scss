@@ -1,0 +1,25 @@
+//    ___     ___     ___
+//   / __|   / __|   / __|
+//  | (__    \__ \   \__ \
+//   \___|   |___/   |___/
+// _|"""""|_|"""""|_|"""""|
+// "`-0-0-'"`-0-0-'"`-0-0-'
+//
+
+// The color scheme and typo stuff, as defined by Jogo.
+$dirtyhenry-background-color: #ffffff;
+$dirtyhenry-color: #4c4d4f;
+$dirtyhenry-color-light: #b2b2b2;
+$dirtyhenry-accent-color-1: #db6149;
+$dirtyhenry-accent-color-2: #ecb39f;
+$dirtyhenry-accent-color-3: #db4045;
+$dirtyhenry-font-family: sans-serif;
+
+// Debug stuff
+$dirtyhenry-debug-background-color: orange;
+
+body {
+  background-color: $dirtyhenry-background-color;
+  color: $dirtyhenry-color;
+  font-family: $dirtyhenry-font-family;
+}

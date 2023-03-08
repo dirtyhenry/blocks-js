@@ -1,0 +1,14 @@
+{
+  "name": "@dirtyhenry/css",
+  "version": "0.1.0",
+  "description": "The CSS I use for my websites.",
+  "main": "./dist/dirtyhenry.css",
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "convert": "sass src/dirtyhenry.scss dist/dirtyhenry.css",
+    "minify": "esbuild dist/dirtyhenry.css --outfile=dist/dirtyhenry.min.css --minify"
+  }
+}
