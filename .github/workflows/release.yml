@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: 18.x
 
+      - name: Install SASS
+        run: brew install sass/sass/sass
+
       - name: Install Dependencies
         run: yarn
 
@@ -36,8 +39,7 @@ jobs:
       - name: Send a Slack notification if a publish happens
         if: steps.changesets.outputs.published == 'true'
         # You can do something when a publish happens.
-        run:
-          node bin/slack-notifier.js
+        run: node bin/slack-notifier.js
           '${{steps.changesets.outputs.publishedPackages}}'
         env:
           SLACK_NOTIFIER_WEBHOOK: ${{ secrets.SLACK_NOTIFIER_WEBHOOK }}
