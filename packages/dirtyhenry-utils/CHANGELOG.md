@@ -1,5 +1,11 @@
 # @dirtyhenry/utils
 
+## 0.3.1
+
+### Patch Changes
+
+- 46db4d6: First release
+
 ## 0.3.0
 
 ### Minor Changes
