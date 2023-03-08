@@ -1,11 +1,11 @@
-type Operation<Context> = {
-  run: (context: Context) => Promise<void>;
+type Operation<C> = {
+  run: (context: C) => Promise<void>;
 };
 
-type OperationQueueProps<Context> = {
-  operations: Operation<Context>[];
-  warmUp: () => Context;
-  coolDown: (context: Context) => void;
+type OperationQueueProps<C> = {
+  operations: Operation<C>[];
+  warmUp: () => Promise<C>;
+  coolDown: (context: C) => Promise<void>;
   retries?: number;
 };
 
@@ -33,9 +33,9 @@ export async function runSequentially<C>({
   retries = 0,
 }: OperationQueueProps<C>) {
   let iteration = 0;
-  let operationsToRun = operations;
+  let operationsToRun: Operation<C>[] | Operation<Awaited<C>>[] = operations;
 
-  const context = warmUp();
+  const context = await warmUp();
 
   const finalSuccesses = [];
   const finalFailures = [];
@@ -51,7 +51,7 @@ export async function runSequentially<C>({
   } while (iteration < 1 + retries && operationsToRun.length > 0);
   finalFailures.push(operationsToRun);
 
-  coolDown(context);
+  await coolDown(context);
 
-  return { successes: finalSuccesses, failures: finalFailures };
+  return { successes: finalSuccesses.flat(), failures: finalFailures.flat() };
 }

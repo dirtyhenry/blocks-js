@@ -12,13 +12,13 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... --filter=@dirtyhenry/utils && changeset publish"
+    "release": "turbo run build --filter=docs^... --filter=@dirtyhenry/utils --filter=@dirtyhenry/css && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "2.26.0",
     "eslint": "8.35.0",
     "eslint-config-dirtyhenry": "*",
-    "jest": "^29.4.3",
+    "jest": "29.4.3",
     "prettier": "2.8.4",
     "turbo": "1.8.3"
   }
