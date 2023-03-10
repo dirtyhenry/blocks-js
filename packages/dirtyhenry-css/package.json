@@ -10,6 +10,11 @@
   "scripts": {
     "build": "make build",
     "convert": "sass src/dirtyhenry.scss dist/dirtyhenry.css",
-    "minify": "esbuild dist/dirtyhenry.css --outfile=dist/dirtyhenry.min.css --minify"
+    "minify": "esbuild dist/dirtyhenry.css --outfile=dist/dirtyhenry.min.css --minify",
+    "dev-sass": "sass --watch src/dirtyhenry.scss:playground/css/dirtyhenry.css",
+    "dev-html": "serve playground"
+  },
+  "devDependencies": {
+    "serve": "14.2.0"
   }
 }
