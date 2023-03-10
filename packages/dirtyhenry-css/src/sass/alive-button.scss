@@ -1,0 +1,7 @@
+// 📜 https://bytes.dev/archives/168
+.alive-button {
+  transition: all 0.1s ease-in-out;
+}
+.alive-button:not(:disabled):active {
+  transform: translateY(1px);
+}
