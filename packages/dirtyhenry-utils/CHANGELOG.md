@@ -1,5 +1,11 @@
 # @dirtyhenry/utils
 
+## 0.3.2
+
+### Patch Changes
+
+- 5c7b91f: Export operation-related types
+
 ## 0.3.1
 
 ### Patch Changes
