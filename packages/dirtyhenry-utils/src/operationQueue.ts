@@ -1,8 +1,8 @@
-type Operation<C> = {
+export type Operation<C> = {
   run: (context: C) => Promise<void>;
 };
 
-type OperationQueueProps<C> = {
+export type OperationQueueProps<C> = {
   operations: Operation<C>[];
   warmUp: () => Promise<C>;
   coolDown: (context: C) => Promise<void>;
