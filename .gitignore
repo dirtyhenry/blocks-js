@@ -11,3 +11,13 @@ dist-ssr
 server/dist
 public/dist
 storybook-static/
+
+# Yarn when not using Zero-installs
+# 📜 https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
