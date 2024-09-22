@@ -1,5 +1,11 @@
 # @dirtyhenry/css
 
+## 0.3.0
+
+### Minor Changes
+
+- 40a65b2: Include [Kids CSS](https://github.com/dirtyhenry/kids)
+
 ## 0.2.1
 
 ### Patch Changes
