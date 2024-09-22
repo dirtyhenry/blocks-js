@@ -20,6 +20,8 @@
     "eslint-config-dirtyhenry": "*",
     "jest": "29.7.0",
     "prettier": "2.8.8",
-    "turbo": "1.13.4"
-  }
+    "turbo": "latest"
+  },
+  "packageManager": "yarn@3.6.1",
+  "name": "blocks-js"
 }
