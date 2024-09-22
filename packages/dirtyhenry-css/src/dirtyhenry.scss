@@ -1,5 +1,20 @@
 @charset "utf-8";
 
-@import "sass/variables.scss";
-@import "sass/call-to-action.scss";
-@import "sass/alive-button.scss";
+@use "base/branding";
+@use "base/reset";
+@use "base/base";
+@use "base/typography";
+@use "base/links";
+
+@use "layouts/header";
+@use "layouts/main";
+@use "layouts/footer";
+
+@use "components/embed";
+@use "components/post-list";
+@use "components/related-pages";
+
+// 🚧 TODO: try to reuse these? 🚧
+// @import "sass/variables.scss";
+// @import "sass/call-to-action.scss";
+// @import "sass/alive-button.scss";

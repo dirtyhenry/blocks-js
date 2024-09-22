@@ -1,0 +1,21 @@
+main {
+  display: block;
+  // Take all the extra vertical space if any.
+  flex: 1;
+  // Use as much horizontal space as possible and centered.
+  width: 100%;
+  margin: 0 auto;
+
+  // Don't let the 100% width overflow on narrower devices.
+  box-sizing: border-box;
+  padding: 0 1em;
+
+  .post-list {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 2em;
+    }
+  }
+}

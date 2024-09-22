@@ -1,0 +1,56 @@
+/** 
+Responsive embed from getbootstrap: 
+📜 https://raw.githubusercontent.com/twbs/bootstrap/14cb65f702defde25a59cf419c078e32e2f1d20d/scss/helpers/_embed.scss 
+*/
+
+.embed-responsive {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    display: block;
+    content: "";
+  }
+
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+// scss-docs-start embed-responsive-aspect-ratios
+$embed-responsive-aspect-ratios: (
+  "21by9": (
+    x: 21,
+    y: 9,
+  ),
+  "16by9": (
+    x: 16,
+    y: 9,
+  ),
+  "4by3": (
+    x: 4,
+    y: 3,
+  ),
+  "1by1": (
+    x: 1,
+    y: 1,
+  ),
+) !default;
+// scss-docs-end embed-responsive-aspect-ratios
+
+@each $key, $ratio in $embed-responsive-aspect-ratios {
+  .embed-responsive-#{$key} {
+    &::before {
+      padding-top: percentage(calc(map-get($ratio, y) / map-get($ratio, x)));
+    }
+  }
+}
