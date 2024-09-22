@@ -28,7 +28,7 @@ To be completed.
 - `yarn build` - Build all packages including the Storybook site
 - `yarn dev` - Run all packages locally and preview with Storybook
 - `yarn lint` - Lint all packages
-- `yarn changeset` - Generate a changeset
+- `yarn run changeset` - Generate a changeset
 - `yarn clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
 
 ## Apps & Packages
@@ -154,7 +154,7 @@ You'll need to create an `NPM_TOKEN` and `GITHUB_TOKEN` and add it to your GitHu
 
 ### Generating the Changelog
 
-To generate your changelog, run `yarn changeset` locally:
+To generate your changelog, run `yarn run changeset` locally:
 
 1. **Which packages would you like to include?** – This shows which packages and changed and which have remained the same. By default, no packages are included. Press `space` to select the packages you want to include in the `changeset`.
 1. **Which packages should have a major bump?** – Press `space` to select the packages you want to bump versions for.
