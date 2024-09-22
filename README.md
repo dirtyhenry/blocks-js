@@ -1,7 +1,7 @@
 <h1 align="center">
     <img 
-        src="https://raw.githubusercontent.com/dirtyhenry/swift-blocks/main/swift-blocks.jpg"
-        alt="swift-blocks logo">
+        src="https://raw.githubusercontent.com/dirtyhenry/web-blocks/main/web-blocks.jpg"
+        alt="web-blocks logo">
 </h1>
 
 # 🧱 Blocks
