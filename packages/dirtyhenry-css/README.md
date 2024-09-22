@@ -1,23 +1,21 @@
-# Vanilla Web
+# Dirty Henry’s CSS & Vanilla HTML
 
 This package contains raw elements of old-timer HTML.
 
-## ⛹️‍♂️ Playgrounds
+## Development Tasks
 
+```make
+make run # Watches scss source files and building CSS in the playground
+make playground # Webserver for the playground
 ```
-yarn run dev-html
-```
 
-## Kids Theme
+## Customization
 
-```scss
+This package distributes `dirtyhenry.css` that provides several CSS variables
+(_aka_ custom properties) for real-time customization capabilities:
+
+```css
 :root {
-  // Define variables here
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    // Overrides
-  }
+  --header-site-color: red;
 }
 ```
