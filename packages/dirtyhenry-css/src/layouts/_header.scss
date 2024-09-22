@@ -1,0 +1,70 @@
+@use "../abstracts";
+
+:root {
+  --header-site-color: #{abstracts.$accent-color};
+  --header-site-color-inverted: #{abstracts.$accent-inverted};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --header-site-color: #{abstracts.$accent-color-dark};
+    --header-site-color-inverted: #{abstracts.$accent-inverted-dark};
+  }
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding: 1em 1em 2em 1em;
+
+  @media screen and (max-width: 767px) {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    overflow-x: hidden;
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      // Show the list items horizontally
+      // with some spacing inbetween
+      list-style: none;
+      li {
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 0 0.8rem;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+#site-title {
+  color: var(--header-site-color);
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: var(--header-site-color-inverted);
+    background-color: var(--header-site-color);
+  }
+}

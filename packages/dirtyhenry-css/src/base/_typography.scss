@@ -1,0 +1,153 @@
+@use "../abstracts";
+
+html {
+  background-color: abstracts.$background-color;
+  color: abstracts.$text-color;
+
+  font-family: "Inter", -apple-system, sans-serif;
+  font-size: 100%;
+  line-height: 1.42;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: abstracts.$background-color-dark;
+    color: abstracts.$text-color-dark;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 137.5%; // 22 px
+  }
+}
+
+main {
+  max-width: 42em;
+  hyphens: auto;
+
+  .post-header {
+    margin-bottom: 2rem;
+  }
+
+  .post-meta {
+    color: abstracts.$text-color-subdued;
+
+    @media (prefers-color-scheme: dark) {
+      color: abstracts.$text-color-subdued-dark;
+    }
+
+    ul.authors-list,
+    ul.categories-list {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: inline-block;
+      li {
+        display: inline-block;
+
+        &:not(:first-child) {
+          &::before {
+            content: ", ";
+          }
+        }
+      }
+    }
+  }
+
+  .post-content {
+    p {
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    blockquote {
+      margin: 1rem 0;
+      padding: 0 1rem;
+      border-left: 4px solid abstracts.$accent-color;
+
+      p:last-child {
+        text-indent: 0;
+      }
+    }
+  }
+
+  .buckygem-youtube-tag,
+  img {
+    margin: 1em 0;
+  }
+
+  blockquote p {
+    hanging-punctuation: first;
+  }
+
+  ul.tags-list {
+    padding: 1rem 0;
+    margin: 0;
+    list-style-type: none;
+    display: inline-block;
+
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: abstracts.$text-color-subdued;
+
+    li {
+      display: inline-block;
+
+      a.tag-link {
+        color: abstracts.$text-color-subdued;
+        text-decoration-color: abstracts.$text-color-subdued;
+      }
+
+      &:not(:first-child) {
+        &::before {
+          content: ", ";
+        }
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+.post-list-item > .post-link {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  // No margin-top since this is the top of the page and we want only 1 per page.
+  // No margin-bottom as metadata should follow.
+}
+
+h2 {
+  font-size: 150%;
+  margin-top: 2rem;
+  margin-bottom: 1.1rem;
+}
+
+h3,
+.post-list-item > .post-link {
+  font-size: 125%;
+}
+
+h3 {
+  margin-top: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  font-size: 68.75%;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+// Add some margin for lists, but not for *nested* lists.
+* + ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

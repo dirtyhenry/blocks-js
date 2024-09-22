@@ -1,0 +1,79 @@
+@use "../abstracts";
+
+$button-border: darken(abstracts.$accent-color, 8%);
+$button-border-dark: lighten(abstracts.$accent-color-dark, 8%);
+
+a {
+  &:not(.button) {
+    &:link {
+      color: abstracts.$accent-color;
+      text-decoration-color: abstracts.$accent-color;
+
+      text-decoration-thickness: 0.06em;
+      text-underline-offset: 0.06em;
+
+      @media (prefers-color-scheme: dark) {
+        color: abstracts.$accent-color-dark;
+        text-decoration-color: abstracts.$accent-color-dark;
+      }
+    }
+
+    &:visited {
+      color: abstracts.$accent-color;
+      text-decoration-color: abstracts.$accent-color;
+
+      text-decoration-line: underline;
+
+      @media (prefers-color-scheme: dark) {
+        color: abstracts.$accent-color-dark;
+        text-decoration-color: abstracts.$accent-color-dark;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration-line: none;
+    }
+
+    &:active {
+      color: abstracts.$accent-inverted-active;
+      @media (prefers-color-scheme: dark) {
+        color: abstracts.$accent-inverted-active-dark;
+      }
+    }
+  }
+
+  &.button {
+    appearance: none;
+    text-decoration: none;
+
+    background-color: abstracts.$accent-color;
+    color: abstracts.$accent-inverted;
+    border: 1px solid $button-border;
+
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: inherit;
+    justify-content: center;
+    padding: 0.5em 1em;
+    position: relative;
+    vertical-align: top;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $button-border;
+      @media (prefers-color-scheme: dark) {
+        background-color: $button-border-dark;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background-color: abstracts.$accent-color-dark;
+      color: abstracts.$accent-inverted-dark;
+      border: 1px solid $button-border-dark;
+    }
+  }
+}

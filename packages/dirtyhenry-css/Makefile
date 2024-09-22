@@ -2,4 +2,7 @@ build:
 	yarn run convert
 	yarn run minify
 
-.PHONY: build
+playground:
+	yarn run dev-html
+
+.PHONY: build playground

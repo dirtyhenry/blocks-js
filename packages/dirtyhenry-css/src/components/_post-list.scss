@@ -1,0 +1,21 @@
+.post-list {
+  .post-list-item {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+
+    .post-link {
+      order: 1;
+      margin: 0.2rem 0.8rem 0 0;
+    }
+
+    .post-meta {
+      order: 2;
+    }
+
+    .post-summary {
+      flex: 1 1 100%;
+      order: 3;
+    }
+  }
+}

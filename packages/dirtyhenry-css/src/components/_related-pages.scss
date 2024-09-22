@@ -1,0 +1,106 @@
+@use "../abstracts";
+
+#related-pages {
+  border-top: 1px solid abstracts.$accent-inverted-active;
+  border-bottom: 1px solid abstracts.$accent-inverted-active;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+
+  @media (prefers-color-scheme: dark) {
+    border-top: 1px solid abstracts.$accent-inverted-active-dark;
+    border-bottom: 1px solid abstracts.$accent-inverted-active-dark;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-flow: column nowrap;
+  }
+}
+
+#related-page-previous,
+#related-page-next {
+  align-content: flex-start;
+  align-items: baseline;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.5rem 0;
+
+  @media screen and (min-width: 768px) {
+    flex: 0 0 50%;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+#related-page-previous {
+  text-align: left;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 768px) {
+    border-right: 1px solid abstracts.$accent-inverted-active;
+    @media (prefers-color-scheme: dark) {
+      border-right: 1px solid abstracts.$accent-inverted-active-dark;
+    }
+    padding-right: 1rem;
+  }
+
+  .related-page-heading {
+    margin-right: 0.5rem;
+    order: 1;
+  }
+
+  .related-page-date {
+    order: 2;
+  }
+}
+
+#related-page-next {
+  text-align: right;
+  justify-content: flex-end;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 1rem;
+  }
+
+  .related-page-heading {
+    margin-left: 0.5rem;
+    order: 2;
+  }
+
+  .related-page-date {
+    order: 1;
+  }
+}
+
+.related-page-heading {
+  color: abstracts.$text-color-subdued;
+
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+
+  @media (prefers-color-scheme: dark) {
+    color: abstracts.$text-color-subdued-dark;
+  }
+}
+
+.related-page-title {
+  flex: 0 0 100%;
+  font-weight: 400;
+  padding: 0.1rem 0 0.1rem 0;
+  order: 3;
+}
+
+.related-page-date {
+  color: abstracts.$text-color-subdued;
+  font-size: 0.85rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: abstracts.$text-color-subdued-dark;
+  }
+}
