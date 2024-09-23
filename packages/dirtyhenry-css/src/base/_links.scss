@@ -1,7 +1,8 @@
+@use "sass:color";
 @use "../abstracts";
 
-$button-border: darken(abstracts.$accent-color, 8%);
-$button-border-dark: lighten(abstracts.$accent-color-dark, 8%);
+$button-border: color.adjust(abstracts.$accent-color, $lightness: -8%);
+$button-border-dark: color.adjust(abstracts.$accent-color-dark, $lightness: 8%);
 
 a {
   &:not(.button) {

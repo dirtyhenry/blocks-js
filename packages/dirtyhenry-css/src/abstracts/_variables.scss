@@ -1,17 +1,17 @@
 // Light mode
 
-$background-color: #fff;
-$text-color: #333;
-$accent-color: #16d;
-$accent-inverted: #fff;
-$accent-inverted-active: #ccc;
-$text-color-subdued: #666;
+$background-color: #fff !default;
+$text-color: #333 !default;
+$accent-color: #16d !default;
+$accent-inverted: #fff !default;
+$accent-inverted-active: #ccc !default;
+$text-color-subdued: #666 !default;
 
 // Dark mode
 
-$background-color-dark: #333;
-$text-color-dark: #fff;
-$accent-color-dark: #5af;
-$accent-inverted-dark: #333;
-$accent-inverted-active-dark: #666;
-$text-color-subdued-dark: #aaa;
+$background-color-dark: #333 !default;
+$text-color-dark: #fff !default;
+$accent-color-dark: #5af !default;
+$accent-inverted-dark: #333 !default;
+$accent-inverted-active-dark: #666 !default;
+$text-color-subdued-dark: #aaa !default;
