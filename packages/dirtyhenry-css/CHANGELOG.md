@@ -1,5 +1,11 @@
 # @dirtyhenry/css
 
+## 0.3.1
+
+### Patch Changes
+
+- d7ba731: Include sources in package
+
 ## 0.3.0
 
 ### Minor Changes
