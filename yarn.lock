@@ -6945,7 +6945,6 @@ __metadata:
   resolution: "blocks-js@workspace:."
   dependencies:
     "@changesets/cli": 2.27.8
-    esbuild: ^0.24.0
     eslint: 8.57.1
     eslint-config-dirtyhenry: "*"
     jest: 29.7.0
