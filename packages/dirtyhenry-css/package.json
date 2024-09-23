@@ -1,6 +1,6 @@
 {
   "name": "@dirtyhenry/css",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "The CSS I use for my websites.",
   "main": "./dist/dirtyhenry.css",
   "license": "MIT",

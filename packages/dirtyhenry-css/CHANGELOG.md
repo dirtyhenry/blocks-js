@@ -1,5 +1,11 @@
 # @dirtyhenry/css
 
+## 0.3.2
+
+### Patch Changes
+
+- dc2d04a: Fix customization options
+
 ## 0.3.1
 
 ### Patch Changes
