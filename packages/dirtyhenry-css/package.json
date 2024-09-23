@@ -11,7 +11,7 @@
     "build": "make build",
     "convert": "sass src/dirtyhenry.scss dist/dirtyhenry.css",
     "minify": "esbuild dist/dirtyhenry.css --outfile=dist/dirtyhenry.min.css --minify",
-    "include-sass": "cp -R src/ dist/sass/",
+    "include-sass": "mkdir -p dist/sass/ && cp -R src/ dist/sass/",
     "dev-sass": "sass --watch src/dirtyhenry.scss:playground/css/dirtyhenry.css",
     "dev-html": "serve playground"
   },
