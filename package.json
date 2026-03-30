@@ -15,12 +15,12 @@
     "release": "turbo run build --filter=@dirtyhenry/utils --filter=@dirtyhenry/css && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.8",
+    "@changesets/cli": "2.30.0",
     "eslint": "8.57.1",
     "eslint-config-dirtyhenry": "*",
     "jest": "29.7.0",
     "prettier": "2.8.8",
-    "turbo": "latest"
+    "turbo": "^2.9.0"
   },
   "packageManager": "yarn@3.6.1",
   "name": "blocks-js"

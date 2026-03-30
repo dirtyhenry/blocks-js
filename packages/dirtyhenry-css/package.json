@@ -16,7 +16,7 @@
     "dev-html": "serve playground"
   },
   "devDependencies": {
-    "esbuild": "^0.24.0",
-    "serve": "14.2.3"
+    "esbuild": "^0.24.2",
+    "serve": "14.2.6"
   }
 }
